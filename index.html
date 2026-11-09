@@ -40,6 +40,8 @@
     display:flex;align-items:flex-end;justify-content:center;overflow:hidden}
   .tcard .silhouette{width:92px;height:150px;background:linear-gradient(180deg,#0a0e1a,#0a0e1a);border-radius:46px 46px 0 0;position:relative;opacity:.9}
   .tcard .silhouette:before{content:"";position:absolute;top:-34px;left:50%;transform:translateX(-50%);width:52px;height:52px;border-radius:50%;background:#0a0e1a}
+  .tcard .photo{position:relative}
+  .tcard .photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 22%}
   .tcard .name{margin-top:12px;font-weight:900;font-size:21px;letter-spacing:.5px}
   .tcard .sub{color:var(--muted);font-size:13px}
   .tcard .stats{display:flex;gap:8px;margin-top:10px}
@@ -108,8 +110,8 @@
     <div>
       <div class="tcard" aria-hidden="true">
         <div class="grade"><span>FANCARD</span><span>GAME DAY</span></div>
-        <div class="photo"><div class="silhouette"></div></div>
-        <div class="name">YOUR GUEST</div>
+        <div class="photo"><img src="example-photo.jpg" alt="Example FANCARD trading card with a guest's photo"></div>
+        <div class="name">LENNI H.</div>
         <div class="sub">Game Day Edition · Your Bar · Los Angeles</div>
         <div class="stats">
           <div><b>#1</b>FAN</div>
